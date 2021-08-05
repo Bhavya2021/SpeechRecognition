@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeechRecognition</title>
+
+   <style>
+       body{
+           text-align: center;
+       }
+    #select-langs{
+        margin-bottom: 1em;
+    }
+    #result{
+        text-align: left !important;
+        width: 50%;
+        border: 1px solid black;
+        min-height: 50vh;
+        margin: 1em auto;
+        border-radius: 5px;
+        padding: 1em;
+    }
+   </style>
+</head>
+<body>
+   <h1>WRITE AS YOU SPEAK</h1>
+   <div id="select-langs">
+       <div>
+           <h3>Select Language</h3>
+       </div>
+       <select id="lang">
+           <option value="en-US">English</option>
+           <option value="hi-IN">Hindi</option>
+           <option value="te-IN">Telugu</option>
+           <option value="kn-IN">Kannada</option>
+       </select>
+   </div>
+   <div>
+       <button id="start">Start</button>
+   </div>
+   <div id="result" contenteditable="true"></div>
+  
+ <script src="main.js" ></script>
+</body>
+</html>
