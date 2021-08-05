@@ -8,7 +8,7 @@ lang.addEventListener("change",(e)=>{
     recognition.lang = e.target.value;
 })
 
-recognition.interimResults =true
+recognition.interimResults =false
 start.addEventListener("click",()=>{
     recognition.start();
 })
